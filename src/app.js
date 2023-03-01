@@ -47,6 +47,7 @@ app.use("/api/notices", noticesRouter);
 app.use("/api/usersinfo", userRouter);
 app.use("/api/users", authRouter);
 app.use("/api/info", infoRouter);
+
 app.use("/api/pets", petRouter);
 
 app.use((req, res) => {
