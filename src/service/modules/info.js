@@ -1,6 +1,6 @@
 const { Sponsors } = require("../schemas/Sponsors");
 
-const getAllSponsors = async () => {
+const getAllSponsors = async (res) => {
   const sponsors = await Sponsors.find();
 
   if (!sponsors) {

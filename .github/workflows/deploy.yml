@@ -16,27 +16,27 @@ jobs:
    - name: Install, lint, build 🔧
      run: |
       npm install
-   #     npm run lint:js
-   #     npm run build
+     #  npm run lint:js
+     #  npm run build
 
-   # - name: Deploy 🚀
-   #   uses: JamesIves/github-pages-deploy-action@4.1.0
-   #   with:
-   #     branch: gh-pages
-   #     folder: build
+   - name: Deploy 🚀
+     uses: JamesIves/github-pages-deploy-action@4.1.0
+     with:
+      branch: gh-pages
+      folder: build
 
-  #  - name: 📂 Sync files
-  #    uses: SamKirkland/FTP-Deploy-Action@4.3.3
-  #    with:
-  #     server: vs1452.mirohost.net
-  #     username: ncodeb
-  #     password: oPp8MV9zo4uo
-  #     # port: 21
-  #     # dry-run: true
-  #     local-dir: ./
-  #     server-dir: ./n-code.com.ua/
-  #     exclude: |
-  #      **/.git*
-  #      **/.git*/**
-  #      **/node_modules/**
-  #      fileToExclude.txt
+   - name: 📂 Sync files
+     uses: SamKirkland/FTP-Deploy-Action@4.3.3
+     with:
+      server: vs1452.mirohost.net
+      username: ncssh
+      password: FoX03010301
+      # port: 21
+      # dry-run: true
+      local-dir: ./
+      server-dir: ./n-code.com.ua/
+      exclude: |
+       **/.git*
+       **/.git*/**
+       **/node_modules/**
+       fileToExclude.txt
